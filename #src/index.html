@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            @@include('./html/header.html')
+            @@include('./html/service.html')
+            @@include('./html/features.html')
+            @@include('./html/teams.html')
+            @@include('./html/clients.html')
+        </div>
+            @@include('./html/footer.html')
+    </div>
+    
+    <div class="submit__form-overlay"></div>
+            <div class="submit__form" id="book-service-popup">
+                <div class="close-btn" id="book-service-close">
+                    <div class="close-form">
+                        <svg class="close-icon" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black"/>
+                            </svg>
+                    </div>
+                </div>
+                <form class="box__form" action="#">
+                    <!-- <div class="hamb__field-service">
+                        <span class="bar-service"></span>
+                        <span class="bar-service"></span>
+                    </div> -->
+                    <div class="form__text">
+                        Оставьте свои данные, мы вам перезвоним
+                    </div>
+                    <div class="inputs">
+                        <div class="input">
+                            <div class="input__label">Имя</div>
+                            <div class="form-icon">
+                                <svg class="icons-form" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z" fill="#212121"/>
+                                    </svg>
+                            <input type="text" class="input__name">
+                                </div>
+                        </div>
+
+                        <div class="input">
+                            <div class="input__label">Телефон</div>
+                            <div class="form-icon">
+                                <svg class="icons-form" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M11.996 9.12268L10.1579 8.91281C9.71644 8.86216 9.28224 9.01413 8.97105 9.32531L7.63948 10.6569C5.59147 9.61479 3.91254 7.94308 2.87044 5.88782L4.20925 4.54901C4.52043 4.23782 4.6724 3.80361 4.62174 3.36217L4.41188 1.53849C4.32504 0.807567 3.70991 0.257568 2.97176 0.257568H1.71979C0.902035 0.257568 0.221776 0.93783 0.272434 1.75559C0.655984 7.93584 5.59871 12.8714 11.7717 13.2549C12.5894 13.3056 13.2697 12.6253 13.2697 11.8075V10.5556C13.2769 9.82465 12.7269 9.20952 11.996 9.12268Z" fill="#212121"/>
+                                    </svg>
+                            <input type="text" class="input__name">
+                                </div>
+                        </div>
+
+                        <div class="input">
+                            <div class="input__label">Почта</div>
+                            <div class="form-icon">
+                                <svg class="icons-form" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                    <path d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z" fill="#212121"/>
+                                    </svg>
+                            <input type="text" class="input__name">
+                                </div>
+                        </div>
+
+                        <div class="input">
+                            <div class="input__label">Комментарий</div>
+                            <textarea class="input__coment" name="comment" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        </div>
+                           
+                        <div class="checkbox">
+                            <input class="checkbox__label" type="checkbox" name="" id="">
+                            Соглашаюсь с рассылкой и принимаю <span><a class="checkbox__span">Условия договора</a></span>
+                        </div>
+
+                        <button class="btn btn__form" type="submit" id="submit">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
